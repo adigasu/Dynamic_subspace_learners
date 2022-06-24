@@ -9,7 +9,7 @@ Learning similarity is a key aspect in medical image analysis, particularly in u
 
 Overview of our proposed attention-based dynamic subspace learners:
 
-<img src = 'Figures/ADSL_arch.png' height = '300px'>
+<img src = 'Figures/ADSL_arch.png' height = '260px'>
 
 ### Dependencies
 This code depends on the following libraries:
@@ -20,7 +20,7 @@ This code depends on the following libraries:
 - tqdm
 - scikit-learn
 - Pytorch
-- Faiss ([Faiss-gpu](https://pypi.org/project/faiss-gpu/)) (pip3 install faiss-gpu>=1.6.1)
+- Faiss >=1.6.1 ([Faiss-gpu](https://pypi.org/project/faiss-gpu/)) (pip3 install faiss-gpu==1.6.1)
 
 ### Datasets
 Please download the datasets and unzip in **Datasets** folder
