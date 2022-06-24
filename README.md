@@ -7,14 +7,26 @@ Learning similarity is a key aspect in medical image analysis, particularly in u
 
 [[paper](https://arxiv.org/abs/2206.09068)] [[short](https://openreview.net/forum?id=IHRUUHMeXcJ)]
 
+Overview of our proposed attention-based dynamic subspace learners:
+
+<img src = 'Figures/ADSL_arch.png' height = '300px'>
+
 ### Dependencies
 This code depends on the following libraries:
 
 - Python >= 3.6
-- SciPy, matplotlib, tqdm and scikit-learn
+- SciPy
+- matplotlib
+- tqdm
+- scikit-learn
 - Pytorch
-- Faiss with GPU support (v1.5.3) ([Faiss-gpu](https://pypi.org/project/faiss-gpu/)) (pip3 install faiss-gpu==1.5.3)
-- Download and extract the datasets from [Stanford Online Products](http://cvgl.stanford.edu/projects/lifted_struct/)
+- Faiss ([Faiss-gpu](https://pypi.org/project/faiss-gpu/)) (pip3 install faiss-gpu>=1.6.1)
+
+### Datasets
+Please download the datasets and unzip in **Datasets** folder
+- [ISIC19](https://challenge.isic-archive.com/data/#2019)
+- [MURA](https://stanfordmlgroup.github.io/competitions/mura/)
+- [HyperKvasir](https://datasets.simula.no/hyper-kvasir/)
 
 ### Training
 

@@ -1,0 +1,71 @@
+{
+    "random_seed": 0,
+    "verbose": false,
+    "dyn_learner": true,
+    "save_model": true,
+    "cuda_device": 0,
+    "sz_embedding": 128,
+    "backend": "faiss-gpu",
+    "nb_epochs": 300,
+    "nb_clusters": 1,
+    "finetune_epoch": 250,
+    "dataset_selected": "isic",
+    "dataset": {
+        "isic": {
+            "root": "./Datasets/ISIC19",
+            "classes": {
+                "train": "range(0, 8)",
+                "init": "range(0, 8)",
+                "eval": "range(0, 8)"
+            }
+        },
+         "mura": {
+            "root": "./net/Datasets/MURA",
+            "classes": {
+                "train": "range(0, 14)",
+                "init": "range(0, 14)",
+                "eval": "range(0, 14)"
+            }
+        },
+          "hkvasir": {
+            "root": "./Datasets/HyperKvasir",
+            "classes": {
+                "train": "range(0, 23)",
+                "init": "range(0, 23)",
+                "eval": "range(0, 23)"
+            }
+        }
+    },
+    "log": {
+        "path": "log/default",
+        "name": "isic-K-8-M-2-exp-0"
+    },
+    "dataloader": {
+        "num_workers": 4,
+        "drop_last": false,
+        "shuffle": false,
+        "pin_memory": true,
+        "batch_size": 80
+    },
+    "opt": {
+        "backbone": {
+            "lr": 1e-5,
+            "weight_decay": 1e-4
+        },
+        "embedding": {
+            "lr": 1e-5,
+            "weight_decay": 1e-4
+        }
+    },
+    "recluster": {
+        "enabled": true,
+        "mod_epoch": 2
+    },
+    "transform_parameters": {
+        "rgb_to_bgr": false,
+        "intensity_scale": [[0, 1], [0, 1]],
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225],
+        "sz_crop": 224
+    }
+}
