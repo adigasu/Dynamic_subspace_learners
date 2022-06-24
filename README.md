@@ -10,9 +10,9 @@ Learning similarity is a key aspect in medical image analysis, particularly in u
 ### Dependencies
 This code depends on the following libraries:
 
-- Python >= 3.6
-- SciPy, matplotlib, tqdm and scikit-learn
-- Pytorch
+- python >= 3.6
+- scipy, matplotlib, tqdm and scikit-learn
+- pytorch
 - Faiss with GPU support (v1.5.3) ([Faiss-gpu](https://pypi.org/project/faiss-gpu/)) (pip3 install faiss-gpu==1.5.3)
 - Download and extract the datasets from [Stanford Online Products](http://cvgl.stanford.edu/projects/lifted_struct/)
 
