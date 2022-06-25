@@ -9,7 +9,7 @@ Learning similarity is a key aspect in medical image analysis, particularly in u
 
 Overview of our proposed attention-based dynamic subspace learners:
 
-<img src = 'Figures/ADSL_arch.png' height = '260px'>
+<img src = 'Figures/ADSL_arch.png' height = '280px'>
 
 ### Dependencies
 This code depends on the following libraries:
@@ -20,19 +20,23 @@ This code depends on the following libraries:
 - tqdm
 - scikit-learn
 - Pytorch
-- Faiss >=1.6.1 ([Faiss-gpu](https://pypi.org/project/faiss-gpu/)) (pip3 install faiss-gpu==1.6.1)
+- Faiss >=1.6.1 ([Faiss-gpu](https://pypi.org/project/faiss-gpu/))
 
 ### Datasets
-Please download the datasets and unzip in **Datasets** folder
+Please download the datasets and place in **Datasets** folder.
 - [ISIC19](https://challenge.isic-archive.com/data/#2019)
 - [MURA](https://stanfordmlgroup.github.io/competitions/mura/)
 - [HyperKvasir](https://datasets.simula.no/hyper-kvasir/)
 
 ### Training
-
 The model can be trained using below command:  
 ```
 python3 experiment.py --dataset=isic --exp=dynAttn --dir=run1 --nb-clusters=1 --dyn_learner --sz-batch=32 --nb-epochs=300
+```
+
+### Testing
+```
+python3 run_test.py --dataset=isic --exp=dynAttn --dir=run1 --nb-clusters=1 --load-epoch=300
 ```
 
 ### Citation
