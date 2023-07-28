@@ -1,15 +1,15 @@
-# Attention-based Dynamic Subspace Learners for Medical Image Analysis
+# <p align="center"> _Attention-based Dynamic Subspace Learners for Medical Image Analysis_
+## <p align="center"> _IEEE JBHI, 2022_ [[paper](https://arxiv.org/abs/2206.09068)] [[short paper](https://openreview.net/forum?id=IHRUUHMeXcJ)]
 Learning similarity is a key aspect in medical image analysis, particularly in uncovering the interpretation of anatomical data in images. Deep metric learning methods are widely used to learn such similarities in the data. Most methods use a single metric learner, which is inadequate to handle the variety of object attributes such as color, shape, or artifacts in the images. Multiple metric learners could focus on these object attributes. However, it requires a number of learners to be found empirically for each new dataset. This work presents a Dynamic Subspace Learners to dynamically exploit multiple learners by removing the need of knowing _apriori_ the number of learners and aggregating new subspace learners during training. Furthermore, the interpretability of such subspace learning is enforced by integrating an attention module into our method, providing a visual explanation of the embedding features. The benefits of our method is evaluated in the application of image clustering, image retrieval, and weakly supervised segmentation.
-
-**Keywords:** Deep Metric Learning, Clustering, Image Retrieval and Weakly Supervised Segmentation
 
 **TL;DR:** A novel dynamic learning strategy that overcomes the empirical search of an optimal number of subspace learners in multiple metric learners.
 
-[[paper](https://arxiv.org/abs/2206.09068)] [[short](https://openreview.net/forum?id=IHRUUHMeXcJ)]
+<p align="center"> Overview of our proposed attention-based dynamic subspace learners:
 
-Overview of our proposed attention-based dynamic subspace learners:
+<p align="center"> <img src = 'Figures/ADSL_arch.png' height = '280px'>
 
-<img src = 'Figures/ADSL_arch.png' height = '280px'>
+**Keywords:** Deep Metric Learning, Clustering, Image Retrieval and Weakly Supervised Segmentation
+
 
 ### Dependencies
 This code depends on the following libraries:
