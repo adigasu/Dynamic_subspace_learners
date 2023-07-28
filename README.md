@@ -47,7 +47,7 @@ Please cite our paper if you find this code or our work useful for your research
   url = {https://arxiv.org/abs/2206.09068},
   author = {Adiga, Sukesh and Dolz, Jose and Lombaert, Herve},
   title = {Attention-based Dynamic Subspace Learners for Medical Image Analysis},
-  publisher = {arXiv},
+  publisher = {IEEE JBHI},
   year = {2022},
 }
 ```
